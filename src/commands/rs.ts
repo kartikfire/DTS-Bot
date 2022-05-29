@@ -3,11 +3,15 @@ import { ICommand } from "wokcommands";
 import execSh from "exec-sh";
 
 export default {
-  category: "Restart",
+  category: "Testing",
   description: "Pulls & Restarts BOT",
 
-  callback() {
+  testOnly: true,
+
+  async callback({ channel, message }) {
     console.log("RS");
+    console.log(message);
+    channel.send("RS");
     execSh("git pull");
   },
 } as ICommand;

@@ -8,7 +8,7 @@ console.log("Bot is starting...");
 
 const FLAGS = Intents.FLAGS;
 const client = new Client({
-  intents: [FLAGS.GUILD_MEMBERS, FLAGS.GUILDS],
+  intents: [FLAGS.GUILD_MEMBERS, FLAGS.GUILDS, FLAGS.GUILD_MESSAGES],
 });
 
 client.on("ready", (client) => {
