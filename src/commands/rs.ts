@@ -7,6 +7,7 @@ export default {
   description: "Pulls & Restarts BOT",
 
   callback() {
+    console.log("RS");
     execSh("git pull");
   },
 } as ICommand;
