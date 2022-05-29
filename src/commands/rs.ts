@@ -9,9 +9,7 @@ export default {
   testOnly: true,
 
   async callback({ channel, message }) {
-    console.log("RS");
-    console.log(message);
-    channel.send("RS");
+    channel.send("Restarting & Updating bot on GCS");
     execSh("git pull");
   },
 } as ICommand;
