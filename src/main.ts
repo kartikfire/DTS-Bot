@@ -12,7 +12,7 @@ const client = new Client({
 });
 
 client.on("ready", (client) => {
-  console.log(client.user.username);
+  console.log(`Started the BOT ${client.user.username}`);
 
   new WOKCommands(client, {
     commandDir: join(__dirname, "commands"),
