@@ -4,6 +4,7 @@
   "main": "./src/Main.ts",
   "scripts": {
     "start": "ts-node ./src/main.ts",
+    "build": "tsc",
     "dev": "nodemon ./src/main.ts"
   },
   "license": "MIT",
