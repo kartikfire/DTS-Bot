@@ -1,0 +1,14 @@
+{
+  "name": "1",
+  "version": "1.0.0",
+  "main": "./src/Main.ts",
+  "scripts": {
+    "start": "ts-node ./src/main.ts",
+    "dev": "nodemon ./src/main.ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "wokcommands": "^1.5.3"
+  }
+}
